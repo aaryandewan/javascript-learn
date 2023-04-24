@@ -1,6 +1,9 @@
-// Import stylesheets
-import './style.css';
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+let p = new Person('Aaryan');
+
+console.log(p.name);
