@@ -1,10 +1,11 @@
-function callMe(...args){
-  console.log(args);
-}
+class Person{
+  constructor(name){
+    this.name = name;
+  }
 
-let n = {
-  name: "Aar",
-  age: 123
+  sayName(){
+    console.log(this.name);
+  }
 };
 
-callMe(n)
+let p = new Person("aar");
