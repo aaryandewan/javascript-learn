@@ -1,9 +1,10 @@
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
+function callMe(...args){
+  console.log(args);
 }
 
-let p = new Person('Aaryan');
+let n = {
+  name: "Aar",
+  age: 123
+};
 
-console.log(p.name);
+callMe(n)
