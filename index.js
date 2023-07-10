@@ -8,7 +8,7 @@ class Complex {
   }
 
   static sum(c, d) {
-    return new Complex(c.plus * d);
+    return c.plus(d);
   }
   get real() {
     return this.r;
@@ -21,5 +21,5 @@ class Complex {
 let one = new Complex(0, 1);
 let two = new Complex(1, 0);
 
-let three = one.plus(two);
+let three = Complex.sum(one, two);
 console.log(three.imaginary);
